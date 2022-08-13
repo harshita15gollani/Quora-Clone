@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98339FF8289D6AF30075AC54 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98339FF7289D6AF30075AC54 /* CommentViewController.swift */; };
+		98339FFD289D6BFF0075AC54 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98339FFC289D6BFF0075AC54 /* AnswerViewController.swift */; };
+		9833A010289D7E190075AC54 /* CommentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A00E289D7E190075AC54 /* CommentCollectionViewCell.swift */; };
+		9833A011289D7E190075AC54 /* CommentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9833A00F289D7E190075AC54 /* CommentCollectionViewCell.xib */; };
+		9833A01B289DA4E20075AC54 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A01A289DA4E20075AC54 /* ProfileViewController.swift */; };
+		9833A026289DA5320075AC54 /* SpacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A025289DA5320075AC54 /* SpacesViewController.swift */; };
+		9833A02F289DA88B0075AC54 /* AdsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A02D289DA88B0075AC54 /* AdsCollectionViewCell.swift */; };
+		9833A030289DA88B0075AC54 /* AdsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9833A02E289DA88B0075AC54 /* AdsCollectionViewCell.xib */; };
+		9833A036289E3D760075AC54 /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A034289E3D760075AC54 /* QuestionCollectionViewCell.swift */; };
+		9833A037289E3D760075AC54 /* QuestionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9833A035289E3D760075AC54 /* QuestionCollectionViewCell.xib */; };
+		9833A042289E44AC0075AC54 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A041289E44AC0075AC54 /* LogInViewController.swift */; };
+		9833A053289EBD3A0075AC54 /* FollowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A051289EBD3A0075AC54 /* FollowCollectionViewCell.swift */; };
+		9833A054289EBD3A0075AC54 /* FollowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9833A052289EBD3A0075AC54 /* FollowCollectionViewCell.xib */; };
+		9833A059289EF16B0075AC54 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A058289EF16B0075AC54 /* LaunchScreenViewController.swift */; };
+		9833A05E289EF2300075AC54 /* splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9833A05D289EF2300075AC54 /* splash.gif */; };
+		9833A063289EF34A0075AC54 /* splashScreen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9833A062289EF33E0075AC54 /* splashScreen.mp4 */; };
+		9833A06B289EF4DB0075AC54 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A06A289EF4DA0075AC54 /* SearchViewController.swift */; };
+		9833A070289FAD380075AC54 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A06F289FAD380075AC54 /* SignUpViewController.swift */; };
+		9833A076289FE3B80075AC54 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A075289FE3B80075AC54 /* ProfileModel.swift */; };
+		9833A07E289FE50A0075AC54 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A07D289FE50A0075AC54 /* ProfileManager.swift */; };
+		9833A08928A03C3A0075AC54 /* AnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A08828A03C3A0075AC54 /* AnswerModel.swift */; };
+		9833A08E28A03DF10075AC54 /* AnswerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833A08D28A03DF10075AC54 /* AnswerManager.swift */; };
+		984D611728A246FB0002127B /* MyAnswerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D611628A246FB0002127B /* MyAnswerManager.swift */; };
+		984D611C28A283CA0002127B /* Ads.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 984D611B28A283CA0002127B /* Ads.jpeg */; };
+		984D612128A3980E0002127B /* MySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D612028A3980E0002127B /* MySearchViewController.swift */; };
+		984D612628A398B00002127B /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D612528A398B00002127B /* SearchModel.swift */; };
+		984D612B28A3991A0002127B /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D612A28A3991A0002127B /* SearchManager.swift */; };
+		984D613028A3E0E90002127B /* AdsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D612F28A3E0E90002127B /* AdsModel.swift */; };
+		984D613528A3E1120002127B /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D613428A3E1120002127B /* AdsManager.swift */; };
+		984D613A28A40CC70002127B /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D613928A40CC70002127B /* CommentModel.swift */; };
+		984D613F28A417160002127B /* CommentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D613E28A417160002127B /* CommentManager.swift */; };
+		984D614528A623340002127B /* MySearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D614328A623330002127B /* MySearchCollectionViewCell.swift */; };
+		984D614628A623340002127B /* MySearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984D614428A623330002127B /* MySearchCollectionViewCell.xib */; };
+		984D614B28A632C30002127B /* NewProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D614A28A632C30002127B /* NewProfileManager.swift */; };
+		98B82DA9289B71A400CEDECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82DA8289B71A400CEDECB /* AppDelegate.swift */; };
+		98B82DAB289B71A400CEDECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82DAA289B71A400CEDECB /* SceneDelegate.swift */; };
+		98B82DAD289B71A400CEDECB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82DAC289B71A400CEDECB /* HomeViewController.swift */; };
+		98B82DB0289B71A400CEDECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B82DAE289B71A400CEDECB /* Main.storyboard */; };
+		98B82DB2289B71A700CEDECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B82DB1289B71A700CEDECB /* Assets.xcassets */; };
+		98B82DB5289B71A700CEDECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B82DB3289B71A700CEDECB /* LaunchScreen.storyboard */; };
+		98B82DC0289B71A800CEDECB /* QuoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82DBF289B71A800CEDECB /* QuoraTests.swift */; };
+		98B82DCB289B71A800CEDECB /* QuoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82DCA289B71A800CEDECB /* QuoraUITests.swift */; };
+		98B82DEF289B935600CEDECB /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82DEE289B935600CEDECB /* NotificationViewController.swift */; };
+		98B82DFA289BF65100CEDECB /* CreatePostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82DF9289BF65100CEDECB /* CreatePostController.swift */; };
+		98B82E00289C009900CEDECB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82DFE289C009900CEDECB /* HomeCollectionViewCell.swift */; };
+		98B82E01289C009900CEDECB /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B82DFF289C009900CEDECB /* HomeCollectionViewCell.xib */; };
+		98B82E09289D09F400CEDECB /* AnswerDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82E08289D09F300CEDECB /* AnswerDescriptionViewController.swift */; };
+		98B82E0F289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B82E0D289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.swift */; };
+		98B82E10289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B82E0E289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98B82DBC289B71A800CEDECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B82D9D289B71A400CEDECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98B82DA4289B71A400CEDECB;
+			remoteInfo = Quora;
+		};
+		98B82DC7289B71A800CEDECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B82D9D289B71A400CEDECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98B82DA4289B71A400CEDECB;
+			remoteInfo = Quora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98339FF7289D6AF30075AC54 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		98339FFC289D6BFF0075AC54 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		9833A00E289D7E190075AC54 /* CommentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCollectionViewCell.swift; sourceTree = "<group>"; };
+		9833A00F289D7E190075AC54 /* CommentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCollectionViewCell.xib; sourceTree = "<group>"; };
+		9833A01A289DA4E20075AC54 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9833A025289DA5320075AC54 /* SpacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesViewController.swift; sourceTree = "<group>"; };
+		9833A02D289DA88B0075AC54 /* AdsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCollectionViewCell.swift; sourceTree = "<group>"; };
+		9833A02E289DA88B0075AC54 /* AdsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsCollectionViewCell.xib; sourceTree = "<group>"; };
+		9833A034289E3D760075AC54 /* QuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		9833A035289E3D760075AC54 /* QuestionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCollectionViewCell.xib; sourceTree = "<group>"; };
+		9833A041289E44AC0075AC54 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = ../../../LogInViewController.swift; sourceTree = "<group>"; };
+		9833A051289EBD3A0075AC54 /* FollowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowCollectionViewCell.swift; sourceTree = "<group>"; };
+		9833A052289EBD3A0075AC54 /* FollowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowCollectionViewCell.xib; sourceTree = "<group>"; };
+		9833A058289EF16B0075AC54 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		9833A05D289EF2300075AC54 /* splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash.gif; sourceTree = "<group>"; };
+		9833A062289EF33E0075AC54 /* splashScreen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = splashScreen.mp4; sourceTree = "<group>"; };
+		9833A06A289EF4DA0075AC54 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9833A06F289FAD380075AC54 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9833A075289FE3B80075AC54 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		9833A07D289FE50A0075AC54 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		9833A08828A03C3A0075AC54 /* AnswerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerModel.swift; sourceTree = "<group>"; };
+		9833A08D28A03DF10075AC54 /* AnswerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerManager.swift; sourceTree = "<group>"; };
+		984D611628A246FB0002127B /* MyAnswerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnswerManager.swift; sourceTree = "<group>"; };
+		984D611B28A283CA0002127B /* Ads.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ads.jpeg; sourceTree = "<group>"; };
+		984D612028A3980E0002127B /* MySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchViewController.swift; sourceTree = "<group>"; };
+		984D612528A398B00002127B /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		984D612A28A3991A0002127B /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		984D612F28A3E0E90002127B /* AdsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsModel.swift; sourceTree = "<group>"; };
+		984D613428A3E1120002127B /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
+		984D613928A40CC70002127B /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		984D613E28A417160002127B /* CommentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentManager.swift; sourceTree = "<group>"; };
+		984D614328A623330002127B /* MySearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		984D614428A623330002127B /* MySearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		984D614A28A632C30002127B /* NewProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileManager.swift; sourceTree = "<group>"; };
+		98B82DA5289B71A400CEDECB /* Quora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B82DA8289B71A400CEDECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98B82DAA289B71A400CEDECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98B82DAC289B71A400CEDECB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		98B82DAF289B71A400CEDECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98B82DB1289B71A700CEDECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98B82DB4289B71A700CEDECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98B82DB6289B71A700CEDECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B82DBB289B71A800CEDECB /* QuoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B82DBF289B71A800CEDECB /* QuoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoraTests.swift; sourceTree = "<group>"; };
+		98B82DC1289B71A800CEDECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B82DC6289B71A800CEDECB /* QuoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B82DCA289B71A800CEDECB /* QuoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoraUITests.swift; sourceTree = "<group>"; };
+		98B82DCC289B71A800CEDECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B82DEE289B935600CEDECB /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		98B82DF9289BF65100CEDECB /* CreatePostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostController.swift; sourceTree = "<group>"; };
+		98B82DFE289C009900CEDECB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		98B82DFF289C009900CEDECB /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		98B82E08289D09F300CEDECB /* AnswerDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDescriptionViewController.swift; sourceTree = "<group>"; };
+		98B82E0D289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		98B82E0E289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerDescriptionCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98B82DA2289B71A400CEDECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B82DB8289B71A800CEDECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B82DC3289B71A800CEDECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9833A074289FDF9D0075AC54 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9833A07D289FE50A0075AC54 /* ProfileManager.swift */,
+				9833A08D28A03DF10075AC54 /* AnswerManager.swift */,
+				984D611628A246FB0002127B /* MyAnswerManager.swift */,
+				984D612A28A3991A0002127B /* SearchManager.swift */,
+				984D613428A3E1120002127B /* AdsManager.swift */,
+				984D613E28A417160002127B /* CommentManager.swift */,
+				984D614A28A632C30002127B /* NewProfileManager.swift */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		98B82D9C289B71A400CEDECB = {
+			isa = PBXGroup;
+			children = (
+				98B82DA7289B71A400CEDECB /* Quora */,
+				98B82DBE289B71A800CEDECB /* QuoraTests */,
+				98B82DC9289B71A800CEDECB /* QuoraUITests */,
+				98B82DA6289B71A400CEDECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98B82DA6289B71A400CEDECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98B82DA5289B71A400CEDECB /* Quora.app */,
+				98B82DBB289B71A800CEDECB /* QuoraTests.xctest */,
+				98B82DC6289B71A800CEDECB /* QuoraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98B82DA7289B71A400CEDECB /* Quora */ = {
+			isa = PBXGroup;
+			children = (
+				9833A074289FDF9D0075AC54 /* API Manager */,
+				98B82DDD289B71D600CEDECB /* Controller */,
+				98B82DDC289B71CD00CEDECB /* View */,
+				98B82DDB289B71C000CEDECB /* Model */,
+				98B82DA8289B71A400CEDECB /* AppDelegate.swift */,
+				98B82DAA289B71A400CEDECB /* SceneDelegate.swift */,
+				98B82DAE289B71A400CEDECB /* Main.storyboard */,
+				98B82DB1289B71A700CEDECB /* Assets.xcassets */,
+				984D611B28A283CA0002127B /* Ads.jpeg */,
+				9833A062289EF33E0075AC54 /* splashScreen.mp4 */,
+				9833A05D289EF2300075AC54 /* splash.gif */,
+				98B82DB3289B71A700CEDECB /* LaunchScreen.storyboard */,
+				98B82DB6289B71A700CEDECB /* Info.plist */,
+			);
+			path = Quora;
+			sourceTree = "<group>";
+		};
+		98B82DBE289B71A800CEDECB /* QuoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				98B82DBF289B71A800CEDECB /* QuoraTests.swift */,
+				98B82DC1289B71A800CEDECB /* Info.plist */,
+			);
+			path = QuoraTests;
+			sourceTree = "<group>";
+		};
+		98B82DC9289B71A800CEDECB /* QuoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98B82DCA289B71A800CEDECB /* QuoraUITests.swift */,
+				98B82DCC289B71A800CEDECB /* Info.plist */,
+			);
+			path = QuoraUITests;
+			sourceTree = "<group>";
+		};
+		98B82DDB289B71C000CEDECB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9833A075289FE3B80075AC54 /* ProfileModel.swift */,
+				9833A08828A03C3A0075AC54 /* AnswerModel.swift */,
+				984D612528A398B00002127B /* SearchModel.swift */,
+				984D612F28A3E0E90002127B /* AdsModel.swift */,
+				984D613928A40CC70002127B /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		98B82DDC289B71CD00CEDECB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98B82DFE289C009900CEDECB /* HomeCollectionViewCell.swift */,
+				98B82DFF289C009900CEDECB /* HomeCollectionViewCell.xib */,
+				98B82E0D289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.swift */,
+				98B82E0E289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.xib */,
+				9833A00E289D7E190075AC54 /* CommentCollectionViewCell.swift */,
+				9833A00F289D7E190075AC54 /* CommentCollectionViewCell.xib */,
+				9833A02D289DA88B0075AC54 /* AdsCollectionViewCell.swift */,
+				9833A02E289DA88B0075AC54 /* AdsCollectionViewCell.xib */,
+				9833A034289E3D760075AC54 /* QuestionCollectionViewCell.swift */,
+				9833A035289E3D760075AC54 /* QuestionCollectionViewCell.xib */,
+				9833A051289EBD3A0075AC54 /* FollowCollectionViewCell.swift */,
+				9833A052289EBD3A0075AC54 /* FollowCollectionViewCell.xib */,
+				984D614328A623330002127B /* MySearchCollectionViewCell.swift */,
+				984D614428A623330002127B /* MySearchCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		98B82DDD289B71D600CEDECB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9833A058289EF16B0075AC54 /* LaunchScreenViewController.swift */,
+				9833A041289E44AC0075AC54 /* LogInViewController.swift */,
+				9833A06F289FAD380075AC54 /* SignUpViewController.swift */,
+				98B82DAC289B71A400CEDECB /* HomeViewController.swift */,
+				9833A025289DA5320075AC54 /* SpacesViewController.swift */,
+				9833A01A289DA4E20075AC54 /* ProfileViewController.swift */,
+				98B82DEE289B935600CEDECB /* NotificationViewController.swift */,
+				98B82DF9289BF65100CEDECB /* CreatePostController.swift */,
+				98B82E08289D09F300CEDECB /* AnswerDescriptionViewController.swift */,
+				98339FF7289D6AF30075AC54 /* CommentViewController.swift */,
+				98339FFC289D6BFF0075AC54 /* AnswerViewController.swift */,
+				9833A06A289EF4DA0075AC54 /* SearchViewController.swift */,
+				984D612028A3980E0002127B /* MySearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98B82DA4289B71A400CEDECB /* Quora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B82DCF289B71A800CEDECB /* Build configuration list for PBXNativeTarget "Quora" */;
+			buildPhases = (
+				98B82DA1289B71A400CEDECB /* Sources */,
+				98B82DA2289B71A400CEDECB /* Frameworks */,
+				98B82DA3289B71A400CEDECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quora;
+			productName = Quora;
+			productReference = 98B82DA5289B71A400CEDECB /* Quora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98B82DBA289B71A800CEDECB /* QuoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B82DD2289B71A800CEDECB /* Build configuration list for PBXNativeTarget "QuoraTests" */;
+			buildPhases = (
+				98B82DB7289B71A800CEDECB /* Sources */,
+				98B82DB8289B71A800CEDECB /* Frameworks */,
+				98B82DB9289B71A800CEDECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98B82DBD289B71A800CEDECB /* PBXTargetDependency */,
+			);
+			name = QuoraTests;
+			productName = QuoraTests;
+			productReference = 98B82DBB289B71A800CEDECB /* QuoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98B82DC5289B71A800CEDECB /* QuoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B82DD5289B71A800CEDECB /* Build configuration list for PBXNativeTarget "QuoraUITests" */;
+			buildPhases = (
+				98B82DC2289B71A800CEDECB /* Sources */,
+				98B82DC3289B71A800CEDECB /* Frameworks */,
+				98B82DC4289B71A800CEDECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98B82DC8289B71A800CEDECB /* PBXTargetDependency */,
+			);
+			name = QuoraUITests;
+			productName = QuoraUITests;
+			productReference = 98B82DC6289B71A800CEDECB /* QuoraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98B82D9D289B71A400CEDECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					98B82DA4289B71A400CEDECB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					98B82DBA289B71A800CEDECB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 98B82DA4289B71A400CEDECB;
+					};
+					98B82DC5289B71A800CEDECB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 98B82DA4289B71A400CEDECB;
+					};
+				};
+			};
+			buildConfigurationList = 98B82DA0289B71A400CEDECB /* Build configuration list for PBXProject "Quora" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98B82D9C289B71A400CEDECB;
+			productRefGroup = 98B82DA6289B71A400CEDECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98B82DA4289B71A400CEDECB /* Quora */,
+				98B82DBA289B71A800CEDECB /* QuoraTests */,
+				98B82DC5289B71A800CEDECB /* QuoraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98B82DA3289B71A400CEDECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984D611C28A283CA0002127B /* Ads.jpeg in Resources */,
+				9833A063289EF34A0075AC54 /* splashScreen.mp4 in Resources */,
+				9833A011289D7E190075AC54 /* CommentCollectionViewCell.xib in Resources */,
+				98B82DB5289B71A700CEDECB /* LaunchScreen.storyboard in Resources */,
+				9833A054289EBD3A0075AC54 /* FollowCollectionViewCell.xib in Resources */,
+				98B82DB2289B71A700CEDECB /* Assets.xcassets in Resources */,
+				98B82DB0289B71A400CEDECB /* Main.storyboard in Resources */,
+				98B82E01289C009900CEDECB /* HomeCollectionViewCell.xib in Resources */,
+				984D614628A623340002127B /* MySearchCollectionViewCell.xib in Resources */,
+				9833A030289DA88B0075AC54 /* AdsCollectionViewCell.xib in Resources */,
+				9833A037289E3D760075AC54 /* QuestionCollectionViewCell.xib in Resources */,
+				98B82E10289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.xib in Resources */,
+				9833A05E289EF2300075AC54 /* splash.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B82DB9289B71A800CEDECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B82DC4289B71A800CEDECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98B82DA1289B71A400CEDECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9833A010289D7E190075AC54 /* CommentCollectionViewCell.swift in Sources */,
+				9833A08E28A03DF10075AC54 /* AnswerManager.swift in Sources */,
+				98339FFD289D6BFF0075AC54 /* AnswerViewController.swift in Sources */,
+				98B82E0F289D0A2B00CEDECB /* AnswerDescriptionCollectionViewCell.swift in Sources */,
+				984D614B28A632C30002127B /* NewProfileManager.swift in Sources */,
+				9833A07E289FE50A0075AC54 /* ProfileManager.swift in Sources */,
+				98B82DFA289BF65100CEDECB /* CreatePostController.swift in Sources */,
+				9833A06B289EF4DB0075AC54 /* SearchViewController.swift in Sources */,
+				9833A036289E3D760075AC54 /* QuestionCollectionViewCell.swift in Sources */,
+				98B82DEF289B935600CEDECB /* NotificationViewController.swift in Sources */,
+				98B82DAD289B71A400CEDECB /* HomeViewController.swift in Sources */,
+				98B82DA9289B71A400CEDECB /* AppDelegate.swift in Sources */,
+				9833A08928A03C3A0075AC54 /* AnswerModel.swift in Sources */,
+				984D614528A623340002127B /* MySearchCollectionViewCell.swift in Sources */,
+				984D612628A398B00002127B /* SearchModel.swift in Sources */,
+				9833A053289EBD3A0075AC54 /* FollowCollectionViewCell.swift in Sources */,
+				9833A02F289DA88B0075AC54 /* AdsCollectionViewCell.swift in Sources */,
+				984D612B28A3991A0002127B /* SearchManager.swift in Sources */,
+				9833A026289DA5320075AC54 /* SpacesViewController.swift in Sources */,
+				98B82E09289D09F400CEDECB /* AnswerDescriptionViewController.swift in Sources */,
+				984D612128A3980E0002127B /* MySearchViewController.swift in Sources */,
+				984D611728A246FB0002127B /* MyAnswerManager.swift in Sources */,
+				984D613A28A40CC70002127B /* CommentModel.swift in Sources */,
+				98B82DAB289B71A400CEDECB /* SceneDelegate.swift in Sources */,
+				9833A070289FAD380075AC54 /* SignUpViewController.swift in Sources */,
+				984D613528A3E1120002127B /* AdsManager.swift in Sources */,
+				9833A076289FE3B80075AC54 /* ProfileModel.swift in Sources */,
+				984D613028A3E0E90002127B /* AdsModel.swift in Sources */,
+				9833A042289E44AC0075AC54 /* LogInViewController.swift in Sources */,
+				9833A01B289DA4E20075AC54 /* ProfileViewController.swift in Sources */,
+				98B82E00289C009900CEDECB /* HomeCollectionViewCell.swift in Sources */,
+				984D613F28A417160002127B /* CommentManager.swift in Sources */,
+				9833A059289EF16B0075AC54 /* LaunchScreenViewController.swift in Sources */,
+				98339FF8289D6AF30075AC54 /* CommentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B82DB7289B71A800CEDECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B82DC0289B71A800CEDECB /* QuoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B82DC2289B71A800CEDECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B82DCB289B71A800CEDECB /* QuoraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98B82DBD289B71A800CEDECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98B82DA4289B71A400CEDECB /* Quora */;
+			targetProxy = 98B82DBC289B71A800CEDECB /* PBXContainerItemProxy */;
+		};
+		98B82DC8289B71A800CEDECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98B82DA4289B71A400CEDECB /* Quora */;
+			targetProxy = 98B82DC7289B71A800CEDECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98B82DAE289B71A400CEDECB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98B82DAF289B71A400CEDECB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98B82DB3289B71A700CEDECB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98B82DB4289B71A700CEDECB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98B82DCD289B71A800CEDECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98B82DCE289B71A800CEDECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98B82DD0289B71A800CEDECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Quora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.iosProject.Quora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98B82DD1289B71A800CEDECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Quora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.iosProject.Quora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98B82DD3289B71A800CEDECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuoraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.iosProject.QuoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quora.app/Quora";
+			};
+			name = Debug;
+		};
+		98B82DD4289B71A800CEDECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuoraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.iosProject.QuoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quora.app/Quora";
+			};
+			name = Release;
+		};
+		98B82DD6289B71A800CEDECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.iosProject.QuoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Quora;
+			};
+			name = Debug;
+		};
+		98B82DD7289B71A800CEDECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.iosProject.QuoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Quora;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98B82DA0289B71A400CEDECB /* Build configuration list for PBXProject "Quora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B82DCD289B71A800CEDECB /* Debug */,
+				98B82DCE289B71A800CEDECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B82DCF289B71A800CEDECB /* Build configuration list for PBXNativeTarget "Quora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B82DD0289B71A800CEDECB /* Debug */,
+				98B82DD1289B71A800CEDECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B82DD2289B71A800CEDECB /* Build configuration list for PBXNativeTarget "QuoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B82DD3289B71A800CEDECB /* Debug */,
+				98B82DD4289B71A800CEDECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B82DD5289B71A800CEDECB /* Build configuration list for PBXNativeTarget "QuoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B82DD6289B71A800CEDECB /* Debug */,
+				98B82DD7289B71A800CEDECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98B82D9D289B71A400CEDECB /* Project object */;
+}
