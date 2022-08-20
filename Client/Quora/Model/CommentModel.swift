@@ -9,14 +9,12 @@ import Foundation
 
 
 struct CommentModel: Codable {
-    let id: String?   //ansId
+    let id: String?  
     let questionId: String?
     let accountId: String?
     let answerDescription: String?
     let numberOfUpvotes, numberOfDownvotes: Int?
-   // let dateModified: String?
-//    let codeEmbed: CodeEmbed
-//    let urlEmbed: URLEmbed
+   
     let accepted: Bool?
     let nestedComment: [NestedComment]?
 
@@ -34,8 +32,6 @@ struct NestedComment: Codable {
     let userName: String?
     let profileImage:String?
     let commentText: String?
-//    let codeEmbed: CodeEmbed
-//    let urlEmbed: URLEmbed
     let id: String?
     let nestedComment: [NestedComment]?
 

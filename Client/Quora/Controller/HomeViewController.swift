@@ -10,10 +10,6 @@ import UniformTypeIdentifiers
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UISearchBarDelegate,AnswerManagerDelegate,AdsManagerDelegate {
     
-   
-   
-       
-    
     @IBOutlet weak var createPost: UIButton!
     @IBOutlet weak var homeCollectionView: UICollectionView!
     
@@ -55,9 +51,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        profileImage.layer.masksToBounds = true
-//        profileImage.layer.cornerRadius = profileImage.bounds.width / 2
+ 
         self.navigationController?.isNavigationBarHidden = true
         createPost?.layer.cornerRadius = CGFloat(20.0)
         createPost?.clipsToBounds = true
@@ -76,18 +70,12 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         homeCollectionView.refreshControl = refreshControl
         caller = AnswerManager()
         callerAds = AdsManager()
-
         caller?.delegate = self
         caller?.fetchProductList(searchItem: "")
         callerAds?.delegate = self
         callerAds?.fetchAdsList(searchItem: "")
-        
-        //refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
-        
     }
-//    @objc func refreshData(){
-//
-//    }
+
     func updateData(answerDetail: [AnswerModel]) {
         self.answerData = answerDetail
         DispatchQueue.main.async {
@@ -113,10 +101,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         callerAds?.fetchAdsList(searchItem: "")
         self.navigationController?.isNavigationBarHidden = true
     }
-//    override func viewDidAppear(_ animated: Bool) {
-//        caller?.fetchProductList(searchItem: "")
-//        callerAds?.fetchAdsList(searchItem: "")
-//    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width:370, height: 250.0)
     }
@@ -144,18 +129,13 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             return cell
         }
         else{
-        
             guard let adsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdsIdentifier",for: indexPath) as? AdsCollectionViewCell else {
                 print("Failed to create custom cell")
                 return UICollectionViewCell()
             }
-            //adsCell.backgroundColor = UIColor.systemGray3
             self.loadImage(urlString: adsData?.image, imageView: adsCell.adsImage)
             return adsCell
         }
-       
-       // return UICollectionViewCell()
-        
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let searchViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MySearchViewController") as? MySearchViewController  {

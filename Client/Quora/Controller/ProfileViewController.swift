@@ -40,7 +40,7 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate,UICollect
     var isTapped: Bool? = false
     var clicked: String?
     @IBOutlet weak var userCollectionView: UICollectionView!
-    //var profileData:ProfileModel?
+   
     
     var profileData: ProfileModel?
     var caller: ProfileManager?
@@ -91,8 +91,6 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate,UICollect
         caller?.fetchProductList(searchItem: "")
         userImage.layer.cornerRadius = 50.0
 
-        
-        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -100,7 +98,7 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate,UICollect
     }
     func updateProfile(){
         self.loadImage(urlString: "https://avatars.githubusercontent.com/u/69767?v=4", imageView: userImage)
-//        self.loadImage(urlString: profileData?.profileImage, imageView: userImage)
+
         userName.text = profileData?.userName
         userDescription.text = profileData?.description
         if let profileData = profileData, let noOfFollowers = profileData.noOfFollowers{

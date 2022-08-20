@@ -18,7 +18,6 @@ struct AnswerModel: Codable {
 
 struct AnswersList: Codable {
     let questionId, accountId, answerId: String?
-    //let answerId: JSONNull?
     let numberOfUpvotes, numberOfDownvotes: Int?
     let codeEmbed, urlEmbed: String?
     let accepted: Bool?
@@ -32,10 +31,8 @@ struct AnswersList: Codable {
 
 struct CommentsLevel: Codable {
     let accountId, parentId, answerId, commentId: String?
-   // let answerId: JSONNull?
     let level: Int?
     let commentText, codeEmbed, urlEmbed: String?
-   // let nestedComments: JSONNull?
     let profileImage: String?
     let userName: String?
    

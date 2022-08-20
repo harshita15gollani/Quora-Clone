@@ -22,13 +22,6 @@ class AnswerManager: UIViewController{
     {
         if let url = URL(string: urlString){
             let session = URLSession(configuration: .default)
-//            var request = URLRequest(url: url)
-//            request.httpMethod = "GET"
-//            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//
-//                        request.addValue("application/json", forHTTPHeaderField: "Accept")
-//
-////                        request.addValue(UserDefaults.standard.string(forKey: "token")!, forHTTPHeaderField: "token")
             let task = session.dataTask(with: url){
                 [weak self] (data, response, error) in
                 if let error = error {

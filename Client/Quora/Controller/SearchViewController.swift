@@ -101,12 +101,7 @@ class SearchViewController: UIViewController,UICollectionViewDelegate,UICollecti
         caller?.delegate = self
         caller?.fetchProductList(searchItem: profileid ?? "")
         userImage.layer.cornerRadius = 50.0
-//        self.loadImage(urlString: "https://avatars.githubusercontent.com/u/69767?v=4", imageView: userImage)
-//        userName.text = "Harshita"
-//        userDescription.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        
-        
-        // Do any additional setup after loading the view.
+
     }
     
     func registerCustomViewInCell(){

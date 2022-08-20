@@ -15,7 +15,6 @@ class CommentManager: UIViewController{
     var delegate: CommentManagerDelegate?
     func fetchProductList(searchItem: String)
     {
-        //\(searchItem)62f0bc72c00b794e86f55f46
         let urlString = "http://10.20.4.131:8082/comment/viewNestedComments/\(searchItem)"
         performRequest(with: urlString)
     }

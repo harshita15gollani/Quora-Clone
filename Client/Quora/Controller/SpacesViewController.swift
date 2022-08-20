@@ -32,7 +32,6 @@ class SpacesViewController: UIViewController,UICollectionViewDelegate,UICollecti
                 continueViewController.myAnswer = self?.answerData?[indexPath.row].questionId
                 self?.navigationController?.pushViewController(continueViewController, animated: true)
             }
-//            self?.performSegue(withIdentifier:"allAnswerIdentifier", sender: nil)
         }
         
         return cell

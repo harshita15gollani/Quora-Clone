@@ -42,11 +42,11 @@ class AnswerViewController: UIViewController {
                         "numberOfDownvotes":0,
                         "accepted":true,
                         "questionId":"\(lastAns)"
-//                        "answerId":"\(myAnswerId)"
+
 
                 ]
                 request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
-                //request.setValue("application/json", forHTTPHeaderField: "Authorization")
+               
                 let task = URLSession.shared.dataTask(with: request) { data, _, error in
                     guard let data = data,error == nil else{
                         return
@@ -74,15 +74,5 @@ class AnswerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

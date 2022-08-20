@@ -9,8 +9,6 @@ import UIKit
 
 class AnswerDescriptionViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,AnswerDescriptionDelegate {
     
-    
-    
     @IBOutlet weak var answerCollectionView: UICollectionView!
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var questionUpvote: UIButton!
@@ -32,15 +30,7 @@ class AnswerDescriptionViewController: UIViewController,UICollectionViewDelegate
                 var request = URLRequest(url: url)
                 request.httpMethod = "POST"
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        //request.setValue(UserDefaults.standard.string(forKey: "token"), forHTTPHeaderField: "token")
-//                let body: [String: Any] = [
-//
-//
-//
-//
-//                ]
-//                request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
-                //request.setValue("application/json", forHTTPHeaderField: "Authorization")
+       
                 let task = URLSession.shared.dataTask(with: request) { data, _, error in
                     guard let data = data,error == nil else{
                         return
@@ -70,15 +60,7 @@ class AnswerDescriptionViewController: UIViewController,UICollectionViewDelegate
                 var request = URLRequest(url: url)
                 request.httpMethod = "POST"
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        //request.setValue(UserDefaults.standard.string(forKey: "token"), forHTTPHeaderField: "token")
-//                let body: [String: Any] = [
-//
-//
-//
-//
-//                ]
-//                request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
-                //request.setValue("application/json", forHTTPHeaderField: "Authorization")
+
                 let task = URLSession.shared.dataTask(with: request) { data, _, error in
                     guard let data = data,error == nil else{
                         return
@@ -98,8 +80,6 @@ class AnswerDescriptionViewController: UIViewController,UICollectionViewDelegate
     var questionData: String?
     var myAnswer: String?
     var tempAnswerId:String?
-    //var commentList: [AnswersList]?
-    //var myComment:String?
     @IBOutlet weak var answer: UIButton!
     
     @IBAction func answer(_ sender: Any) {
@@ -118,8 +98,6 @@ class AnswerDescriptionViewController: UIViewController,UICollectionViewDelegate
             guard let nextScreen = segue.destination as? CommentViewController else {
                 return
             }
-           // nextScreen.commentList = commentDetails
-            
             nextScreen.myCommentId = tempAnswerId
         }
     }
@@ -154,15 +132,7 @@ class AnswerDescriptionViewController: UIViewController,UICollectionViewDelegate
                     var request = URLRequest(url: url)
                     request.httpMethod = "POST"
                     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            //request.setValue(UserDefaults.standard.string(forKey: "token"), forHTTPHeaderField: "token")
-    //                let body: [String: Any] = [
-    //
-    //
-    //
-    //
-    //                ]
-    //                request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
-                    //request.setValue("application/json", forHTTPHeaderField: "Authorization")
+           
                     let task = URLSession.shared.dataTask(with: request) { data, _, error in
                         guard let data = data,error == nil else{
                             return
@@ -184,15 +154,6 @@ class AnswerDescriptionViewController: UIViewController,UICollectionViewDelegate
                     var request = URLRequest(url: url)
                     request.httpMethod = "POST"
                     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            //request.setValue(UserDefaults.standard.string(forKey: "token"), forHTTPHeaderField: "token")
-    //                let body: [String: Any] = [
-    //
-    //
-    //
-    //
-    //                ]
-    //                request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
-                    //request.setValue("application/json", forHTTPHeaderField: "Authorization")
                     let task = URLSession.shared.dataTask(with: request) { data, _, error in
                         guard let data = data,error == nil else{
                             return

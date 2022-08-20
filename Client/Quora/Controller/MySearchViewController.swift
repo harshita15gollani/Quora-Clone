@@ -55,21 +55,7 @@ class MySearchViewController: UIViewController, UICollectionViewDelegate,UIColle
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width:370, height: 100.0)
     }
-//    func updateDetail(){
-//        userName.text = productData?.first?.userName
-//        userDescription.text = productData?.first?.description
-//        self.loadImage(urlString: productData?.first?.profileImage, imageView: userImage)
-//        if let productData = productData, let noOfFollowers = productData.first?.noOfFollowers{
-//            followers.text = "\(noOfFollowers)"
-//        }
-//        if let productData = productData, let noOfFollowing = productData.first?.noOfFollowing{
-//            following.text = "\(noOfFollowing)"
-//        }
-//        if let productData = productData, let score = productData.first?.score{
-//            self.score.text = "\(score)"
-//        }
-//    }
-   
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false

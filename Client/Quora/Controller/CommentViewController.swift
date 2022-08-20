@@ -16,7 +16,7 @@ class CommentViewController: UIViewController,UICollectionViewDelegate,UICollect
     @IBAction func cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    //var commentList: [CommentsLevel]?
+    
     
     @IBOutlet weak var comment: UITextView!
     var myCommentId:String?
@@ -63,22 +63,9 @@ class CommentViewController: UIViewController,UICollectionViewDelegate,UICollect
     }
     
     @IBOutlet weak var commentView: UICollectionView!
-   // var totalElements: Int = 0
-    
-//    func getCount(){
-//        if let commentList = commentList{
-//            for item in commentList{
-//                if let total = item.commentsLevel?.count{
-//                    totalElements = totalElements + total
-//                }
-//
-//            }
-//        }
-//
-//    }
+   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        getCount()
-//        return totalElements
+
         return commentData?.nestedComment?.count ?? 0
     }
     func updateData(profileDetail: CommentModel) {
@@ -87,33 +74,17 @@ class CommentViewController: UIViewController,UICollectionViewDelegate,UICollect
             self.commentView.reloadData()
         }
     }
-   // var nextComment: NestedComment?
+   
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CommentIdentifier",for: indexPath) as? CommentCollectionViewCell else {
             print("Failed to create custom cell")
             return UICollectionViewCell()
         }
-//        if commentList?[indexPath.row].commentsLevel?.count == 0{
-//            cell.isHidden = true
-//        }
-//        else {
-       // cell.comment1.text = commentList?[indexPath.row].commentText
-       // self.loadImage(urlString: commentList?[indexPath.row].profileImage, imageView: cell.commentImage)
-                
-           // }
+
         if commentData?.nestedComment?.count == 0{
             cell.isHidden = true
         }
         else{
-            
-//            if let commentData = commentData, let nestedComment = commentData.nestedComment?[indexPath.row]{
-//                nextComment = nestedComment
-//                while nestedComment != nil{
-//                    cell.comment1.text = nestedComment.commentText
-//                    nextComment = nextComment?.nestedComment?.first
-//                }
-                
-            
             cell.comment1.text = commentData?.nestedComment?[indexPath.row].commentText
             self.loadImage(urlString: commentData?.nestedComment?[indexPath.row].profileImage, imageView: cell.commentImage)
         }
@@ -137,7 +108,6 @@ class CommentViewController: UIViewController,UICollectionViewDelegate,UICollect
         caller = CommentManager()
         caller?.delegate = self
         print(myCommentId)
-       // caller?.fetchProductList(searchItem: "")
         caller?.fetchProductList(searchItem: myCommentId ?? "")
         // Do any additional setup after loading the view.
     }

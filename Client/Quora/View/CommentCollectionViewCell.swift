@@ -9,13 +9,8 @@ import UIKit
 
 class CommentCollectionViewCell: UICollectionViewCell {
 
-    
     @IBOutlet weak var commentImage: UIImageView!
-    
     @IBOutlet weak var comment1: UILabel!
-    
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

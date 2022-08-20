@@ -8,8 +8,6 @@
 import UIKit
 
 class MySearchCollectionViewCell: UICollectionViewCell {
-
-    
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
@@ -39,11 +37,7 @@ class MySearchCollectionViewCell: UICollectionViewCell {
     var viewProfile: (() -> Void)?
     @IBAction func profile(_ sender: Any) {
         viewProfile?()
-//        if productData?.first?.accountType == "Public" || productData?.first?.accountType == "Corporate" {
-//             if let searchViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "SearchViewController") as? SearchViewController  {
-//        navigationController?.pushViewController(searchViewController, animated: true)
-//    }
-//        }
+
         
     }
     override func awakeFromNib() {

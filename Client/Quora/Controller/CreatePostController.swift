@@ -39,7 +39,7 @@ class CreatePostController: UIViewController {
 
                 ]
                 request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
-                //request.setValue("application/json", forHTTPHeaderField: "Authorization")
+               
                 let task = URLSession.shared.dataTask(with: request) { data, _, error in
                     guard let data = data,error == nil else{
                         return
