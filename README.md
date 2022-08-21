@@ -1,21 +1,9 @@
 # Quora-Clone
 
-![WhatsApp Image 2022-08-14 at 12 27 41 AM (1)](https://user-images.githubusercontent.com/76647036/184508302-ec5f7d34-9d1e-4286-b7c4-6e5d822472b6.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 41 AM (2)](https://user-images.githubusercontent.com/76647036/184508305-487f8364-a30f-4fb3-aeac-d2c91e1839d1.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 41 AM](https://user-images.githubusercontent.com/76647036/184508306-063d728c-8875-4ea7-ba7c-9110bfb70034.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 42 AM (1)](https://user-images.githubusercontent.com/76647036/184508307-2207c35b-3985-4fdc-9d76-9108f17f982f.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 42 AM (2)](https://user-images.githubusercontent.com/76647036/184508310-9836d382-d543-4185-9dc2-6572a9781092.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 42 AM](https://user-images.githubusercontent.com/76647036/184508311-098a4905-27e5-43aa-a2f2-7367a18a851d.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 43 AM (1)](https://user-images.githubusercontent.com/76647036/184508312-e44ca9e6-c27b-4d9b-9a85-6c717df1a26d.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 43 AM (2)](https://user-images.githubusercontent.com/76647036/184508313-630dbe2c-f429-44da-b063-58dda46bbf48.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 43 AM](https://user-images.githubusercontent.com/76647036/184508314-1281c65e-6f67-426c-8d5d-b48d1709d378.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 44 AM](https://user-images.githubusercontent.com/76647036/184508315-58e376a6-12e2-4648-b7b6-bda511d085c1.jpeg)
-![WhatsApp Image 2022-08-14 at 12 28 24 AM](https://user-images.githubusercontent.com/76647036/184508317-d3a9c729-343d-4152-8db4-0b2490dcdab0.jpeg)
-![WhatsApp Image 2022-08-14 at 12 28 25 AM (1)](https://user-images.githubusercontent.com/76647036/184508319-a7e67082-f9e5-400e-a140-d35b90079274.jpeg)
-![WhatsApp Image 2022-08-14 at 12 28 25 AM](https://user-images.githubusercontent.com/76647036/184508320-c852059c-ccaa-4656-afe2-7260d8f8df7b.jpeg)
-![WhatsApp Image 2022-08-14 at 12 26 42 AM (1)](https://user-images.githubusercontent.com/76647036/184508321-9e7c3b8d-0f86-41bc-ba02-645cca168d6e.jpeg)
-![WhatsApp Image 2022-08-14 at 12 26 42 AM (2)](https://user-images.githubusercontent.com/76647036/184508323-9fdd0141-b863-4f9c-9189-d3a9be61fd66.jpeg)
-![WhatsApp Image 2022-08-14 at 12 26 42 AM](https://user-images.githubusercontent.com/76647036/184508324-b2a2cda4-6934-4852-8bbb-19c6510b3e8d.jpeg)
-![WhatsApp Image 2022-08-14 at 12 26 53 AM](https://user-images.githubusercontent.com/76647036/184508325-11a7f2e1-e375-4bb7-9c6b-7bf97ad1ed46.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 40 AM (1)](https://user-images.githubusercontent.com/76647036/184508327-4a906c94-3e01-4c0d-9b86-ce9b17602bd6.jpeg)
-![WhatsApp Image 2022-08-14 at 12 27 40 AM](https://user-images.githubusercontent.com/76647036/184508328-b7ed97f1-d6d9-4e13-b0ec-fefb0e69e21e.jpeg)
+Login Page               |  SignUp               | Activity Feed               |  Spaces Page
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/76647036/185739393-fd84887c-db2c-4aba-a5b2-d3705b97ef8f.jpeg)|![](https://user-images.githubusercontent.com/76647036/185739385-aa3a9b81-79b1-4220-bc63-6e617093df65.jpeg)|![](https://user-images.githubusercontent.com/76647036/185739391-80cf555f-1a27-4f3e-b723-4eb33fe913e4.jpeg)|![](https://user-images.githubusercontent.com/76647036/185739386-bd3bccef-04bc-4e9f-8923-a0b755d1f783.jpeg)|
+
+Answer Description          |  MyProfile       |   Post Question               |  Post Answer
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/76647036/185739390-d7fce233-e647-4068-b314-4179492a8235.jpeg)|![](https://user-images.githubusercontent.com/76647036/185739394-10871e06-addc-46cf-8305-51d2fd36e5f0.jpeg)|![](https://user-images.githubusercontent.com/76647036/185739379-3a31317c-5bde-48d6-889c-9483a0d290da.jpeg)|![](https://user-images.githubusercontent.com/76647036/185739396-ae4c7b47-c99e-4762-b4ed-5ca7cde6beea.jpeg)|
